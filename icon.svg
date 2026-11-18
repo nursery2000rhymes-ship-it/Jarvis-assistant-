@@ -1,9 +1,87 @@
-<link rel="icon" type="image/png" href="assets/jarvis-arc-reactor.png">
 
-<link rel="apple-touch-icon" href="assets/jarvis-arc-reactor.png">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<img
-  src="assets/jarvis-arc-reactor.png"
-  alt="JARVIS Arc Reactor"
-  class="jarvis-icon"
-/>
+    <title>J.A.R.V.I.S. - Arc Reactor</title>
+
+    <link rel="icon" type="image/png" href="./assets/jarvis-arc-reactor.png">
+    <link rel="apple-touch-icon" href="./assets/jarvis-arc-reactor.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #020713;
+            font-family: Arial, sans-serif;
+            color: #00c8ff;
+        }
+
+        .jarvis-container {
+            text-align: center;
+        }
+
+        .jarvis-reactor {
+            width: 220px;
+            height: 220px;
+            margin: auto;
+            border-radius: 50%;
+            overflow: hidden;
+            filter: drop-shadow(0 0 20px #008cff);
+            animation: reactorGlow 2s infinite alternate;
+        }
+
+        .jarvis-reactor img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        h1 {
+            margin-top: 24px;
+            letter-spacing: 8px;
+            text-shadow: 0 0 15px #00aaff;
+        }
+
+        p {
+            margin-top: 10px;
+            letter-spacing: 4px;
+            font-size: 12px;
+        }
+
+        @keyframes reactorGlow {
+            from {
+                filter: drop-shadow(0 0 10px #008cff);
+            }
+            to {
+                filter: drop-shadow(0 0 30px #00d9ff);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="jarvis-container">
+        <div class="jarvis-reactor">
+            <img
+                src="./assets/jarvis-arc-reactor.png"
+                alt="JARVIS Arc Reactor"
+            >
+        </div>
+
+        <h1>J.A.R.V.I.S.</h1>
+        <p>STARK INDUSTRIES // PERSONAL ASSISTANT</p>
+    </main>
+</body>
+</html>
+
