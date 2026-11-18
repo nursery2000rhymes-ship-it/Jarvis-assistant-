@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+ <defs>
+  <radialGradient id="bg"><stop stop-color="#102d59"/><stop offset="1" stop-color="#020817"/></radialGradient>
+  <linearGradient id="metal" x2="1" y2="1"><stop stop-color="#f5fbff"/><stop offset=".35" stop-color="#56718f"/><stop offset=".7" stop-color="#182b46"/><stop offset="1" stop-color="#a9d8ff"/></linearGradient>
+  <linearGradient id="glow" x2="0" y2="1"><stop stop-color="#eaffff"/><stop offset=".45" stop-color="#39dfff"/><stop offset="1" stop-color="#087cff"/></linearGradient>
+  <filter id="blur"><feGaussianBlur stdDeviation="7"/></filter>
+ </defs>
+ <circle cx="256" cy="256" r="244" fill="url(#bg)"/>
+ <circle cx="256" cy="256" r="218" fill="none" stroke="#087cff" stroke-width="8" opacity=".35" filter="url(#blur)"/>
+ <circle cx="256" cy="256" r="210" fill="none" stroke="url(#metal)" stroke-width="20"/>
+ <circle cx="256" cy="256" r="183" fill="none" stroke="#20bfff" stroke-width="9"/>
+ <circle cx="256" cy="256" r="160" fill="#06172d" stroke="url(#metal)" stroke-width="12"/>
+ <path d="M256 92 394 174 394 338 256 420 118 338 118 174Z" fill="#0a2445" stroke="url(#metal)" stroke-width="16"/>
+ <path d="M256 137 354 194 354 318 256 375 158 318 158 194Z" fill="url(#glow)" opacity=".18"/>
+ <path d="M256 150 348 204 348 308 256 362 164 308 164 204Z" fill="none" stroke="#41dcff" stroke-width="12"/>
+ <path d="M256 188 314 222 314 290 256 324 198 290 198 222Z" fill="url(#glow)" stroke="#e5ffff" stroke-width="7"/>
+ <circle cx="256" cy="256" r="18" fill="#fff"/>
+ <circle cx="256" cy="256" r="38" fill="#47eaff" opacity=".35" filter="url(#blur)"/>
+ <g fill="#d9f8ff"><circle cx="256" cy="54" r="5"/><circle cx="256" cy="458" r="5"/><circle cx="54" cy="256" r="5"/><circle cx="458" cy="256" r="5"/></g>
+</svg>

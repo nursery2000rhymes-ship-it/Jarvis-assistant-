@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#061322"><meta name="description" content="J.A.R.V.I.S. Project NOVA — a futuristic personal AI assistant.">
+  <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png"><link rel="stylesheet" href="style.css">
+  <title>J.A.R.V.I.S. — PROJECT NOVA</title>
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <header class="topbar"><div class="brand"><span class="brand-mark">N</span><span>STARK INDUSTRIES <small>PERSONAL AI SYSTEMS</small></span></div><div class="status"><i></i><span id="systemStatus">SYSTEM STANDBY</span></div></header>
+  <main>
+    <section class="hero"><div class="eyebrow">NEURAL INTERFACE <span>•</span> PROJECT NOVA / 01</div><h1>J.A.R.V.I.S.</h1><p class="subtitle">JUST A RATHER VERY INTELLIGENT SYSTEM</p>
+      <button id="reactorButton" class="reactor-button" aria-label="Activate JARVIS voice input"><span class="reactor-ring ring-a"></span><span class="reactor-ring ring-b"></span><img src="assets/jarvis-arc-reactor.png" alt="JARVIS blue arc reactor emblem"><span class="reactor-hint">TAP TO SPEAK</span></button>
+      <div class="system-grid"><div><small>CORE STATUS</small><strong id="coreStatus">ONLINE</strong></div><div><small>VOICE LINK</small><strong id="voiceStatus">READY</strong></div><div><small>LOCAL TIME</small><strong id="clock">--:--:--</strong></div></div>
+    </section>
+    <section class="console"><div class="section-head"><div><span class="eyebrow">SECURE CHANNEL</span><h2>Communication Log</h2></div><button class="clear-btn" id="clearChat">CLEAR LOG</button></div><div id="chatLog" class="chat-log" aria-live="polite"><article class="message jarvis"><span class="speaker">J.A.R.V.I.S. <b>●</b></span><p>Good day. All systems are standing by. How may I assist you?</p></article></div>
+      <form id="chatForm" class="composer"><input id="messageInput" autocomplete="off" placeholder="Ask JARVIS anything..." aria-label="Message JARVIS"><button type="submit">SEND <span>↗</span></button></form>
+      <div class="controls"><label class="select-wrap">LANGUAGE <select id="language"><option value="en">ENGLISH</option><option value="hi">हिन्दी</option></select></label><label class="toggle"><input id="speakReplies" type="checkbox" checked><span></span> VOICE REPLIES</label><button id="wakeButton" class="small-btn">WAKE WORD: OFF</button></div>
+    </section>
+    <section class="config"><div><span class="eyebrow">AI CONNECTION</span><h2>Neural Link</h2><p>Connect your private Cloudflare Worker endpoint to enable AI conversations.</p></div><div class="endpoint"><input id="workerUrl" placeholder="https://your-worker.your-subdomain.workers.dev" aria-label="Worker URL"><button id="saveWorker">SAVE LINK</button></div><p class="note">Your API key belongs in the Cloudflare Worker secret, never in this browser app.</p></section>
+  </main>
+  <footer>PROJECT NOVA <span>•</span> PERSONAL ASSISTANT INTERFACE <span>•</span> V1.1</footer>
+  <script src="app.js"></script>
+</body></html>
